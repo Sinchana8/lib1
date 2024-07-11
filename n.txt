@@ -51,4 +51,58 @@ int main() {
 }
 
 
+ 1
+ git init
+ git clone 
+ git add .
+ git commit -m "<message>"
+ git push
+
+ 2
+ git branch feature-branch
+ git checkout feature-branch
+ git add .
+ git commit -m "<message>"
+ git push origin feature-branch:main
  
+ b
+ git stash
+ git checkout -b new-branch
+ git stash apply
+
+ 3
+ git clone <url>
+ git checkout -b feature-branch
+ Make some changes (add some files.py or .txt)
+ git add .
+git commit -m "Changes"
+git fetch origin
+git rebase origin/main
+git push origin feature-branch
+git merge feature-branch
+git pull origin feature-branch  
+git push
+
+4
+git add .
+git commit -m "message"
+git tag -a v1.0 -m "message"
+git push origin tag v1.0
+
+5
+git add .
+git commit -m "Source branch"
+git push
+git status
+git log --oneline
+git checkout main
+git cherry-pick <hash_code>
+git cherry-pick origin main
+
+6
+git log --onleline=commit include
+git show <commit_id>
+Write the command to list all commits made by the author "JohnDoe" between "2023-01-01" and "2023-12-31".
+git log --author="JohnDoe" --after="2023-01-01" --before="2023-12-31"
+git log -n 5
+git revert abc123

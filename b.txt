@@ -1,5 +1,6 @@
 hello
 
+<<<<<<< HEAD
 hello i am new to git
 i am sinchana
 opl
@@ -7,3 +8,6 @@ kplk
 lop
 
 jolly
+=======
+hello i am new to git
+>>>>>>> 5f61fe1 (first)
